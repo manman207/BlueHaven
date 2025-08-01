@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./output.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Blue Haven Real Estate Company</title>
+</head>
+<body style="background-color: #cfb598;">
+    <div class="bg-[url('new-bg-1.jpg')] bg-no-repeat bg-cover min-h-screen pt-6" style="position:relative;">
+      <div class="bg-overlay"></div>
+        <nav class="navbar-glass fixed-navbar p-5 ml-6 mr-6 flex items-center justify-between relative" style="border-radius:22px; box-shadow:0 8px 32px rgba(30,58,138,0.12); backdrop-filter:blur(12px); background:rgba(255,255,255,0.85); border:1.5px solid rgba(139,92,42,0.12); top:0; left:0; right:0; z-index:1000;">
+        <img src="logo.png" alt="Logo" class="h-30 logo-img" style="border-radius:12px; box-shadow:0 2px 8px rgba(139,92,42,0.08);">
+        <ul class="nav-list flex space-x-10 text-md uppercase font-semibold flex-grow justify-center" style="letter-spacing:1.5px;">
+            <li class="nav-link active">Home</li>
+            <li class="nav-link"><a href="#about" style="color:inherit; text-decoration:none; display:block; width:100%; height:100%;">About Us</a></li>
+            <li class="nav-link">Services<i class="fa-solid fa-angle-down" style="margin-left: 11px;"></i></li>
+            <li class="nav-link">Projects</li>
+            <li class="nav-link">Why Choose Us</li>
+            <li class="nav-link">Testimonials</li>
+            <li class="nav-btn-list" style="list-style:none; width:100%; display:none; justify-content:center; margin-top:12px;">
+              <button class="nav-btn-modern" id="consultBtn" style="background:linear-gradient(90deg,#8B5C2A,#1e3a8a); color:#fff; border:none; border-radius:14px; padding:18px 38px; font-size:1.25rem; font-weight:700; text-transform:uppercase; box-shadow:0 4px 16px rgba(30,58,138,0.10); display:flex; align-items:center; gap:12px; transition:transform 0.18s, box-shadow 0.18s; cursor:pointer; position:relative; overflow:hidden; width:90%; max-width:260px; margin:0 auto;">
+                <span style="display:flex; align-items:center; gap:8px;">
+                  <i class="fas fa-calendar-check" style="font-size:1.3rem;"></i>
+                  Book A Consultation
+                </span>
+                <span class="nav-btn-arrow" style="display:inline-block; margin-left:8px; transition:transform 0.18s;">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="width:22px;height:22px;vertical-align:middle;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                    <g transform="translate(0,2)">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18l9-9m0 0v7m0-7h-7" />
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </li>
+        </ul>
+        <button class="hamburger" aria-label="Open menu" style="background:none; border:none; cursor:pointer; position:absolute; right:24px; top:24px; z-index:20;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center min-h-screen">
+            <p class="text-black text-8xl font-bold text-center mt-20 mx-auto flex flex-col luxury-text-mobile" style="z-index:2;">
+                <span class="font-bold">Embrace The</span>
+                <span class="font-bold">Luxury LifeStyle.</span>
+            </p>
+            <p class="text-xl mt-2 center-mobile" style="color: #3b3b3d">Experience elegance and comfort with Blue Haven. 
+                Your luxury journey starts here.</p>
+            
+            <div class="text-black text-xl mt-10 font-semibold text-center bg-white p-4 rounded-lg shadow-lg contact-us-mobile" style="z-index:2;">
+                Contact Us
+                <button class="bg-blue-900 hover:bg-[#8B5C2A] h-8 rounded-lg ml-2 w-10"><i class="fas fa-arrow-right  text-white"></i></button>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="flex justify-between mt-10 px-6">
+        <p class="uppercase font-semibold text-2xl">Blue Haven</p>
+        <p class="uppercase font-semibold text-2xl">Established in 2025</p>
+    </div>
+
+    <div class="flex items-center justify-center mt-10 px-6" style="margin-bottom: 80px;">
+      <div class="image-row" style="display: flex; gap: 30px;">
+        <div class="img-hover-box" style="position:relative; width:240px; height:240px; border-radius:16px; overflow:hidden;">
+          <img src="luxury.jpg" alt="Luxury Image 1" class="responsive-img" style="width:100%; height:100%; object-fit:cover; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.12); transition:filter 0.3s;" />
+          <div class="img-backdrop" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px; background:rgba(20,20,40,0.0); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:600; font-size:1.1rem; opacity:0; transition:background 0.3s, opacity 0.3s; pointer-events:none;">View this</div>
+        </div>
+        <div class="img-hover-box" style="position:relative; width:240px; height:240px; border-radius:16px; overflow:hidden;">
+          <img src="luxury2.jpg" alt="Luxury Image 2" class="responsive-img" style="width:100%; height:100%; object-fit:cover; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.12); transition:filter 0.3s;" />
+          <div class="img-backdrop" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px; background:rgba(20,20,40,0.0); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:600; font-size:1.1rem; opacity:0; transition:background 0.3s, opacity 0.3s; pointer-events:none;">View this</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:900px; margin:0 auto; padding:32px 16px;"  >
+      <div style="background:#fff; border-radius:20px; box-shadow:0 4px 16px rgba(0,0,0,0.10); padding:40px 28px 32px 28px; display:flex; flex-direction:column; align-items:center; gap:28px; animation: fadeInUp 1.2s cubic-bezier(.77,0,.175,1);  margin-bottom: 1rem;">
+        <p style="font-weight:600; font-size:1.5rem; color:#222; margin-bottom:0;" id="about">About Us</p>
+        <div style="width:60px; height:4px; background:linear-gradient(90deg,#8B5C2A,#1e3a8a); border-radius:2px; margin:18px 0;"></div>
+        <p class="font-semibold" style="font-size:1.25rem; color:#444; text-align:center; margin-bottom:0;">We are a premier real estate and design firm specializing in high-end villas and tailored interior & exterior designs. Whether you're seeking your dream home or transforming your space into a modern masterpiece.</p>
+        <h2 style="font-weight:700; font-size:1.35rem; color:#8B5C2A; margin-top:18px; margin-bottom:0; text-align:center;">Experience Luxury Like Never Before</h2>
+        <p class="text-xl" style="color:#222; text-align:center; margin-bottom:0;">Step into a world where sophistication meets comfort. Our exclusive properties and bespoke designs redefine modern living, offering you a lifestyle of elegance, tranquility, and distinction.</p>
+        <div style="margin-top:32px; display:flex; align-items:center; justify-content:center; gap:18px; border:2px solid #8B5C2A; border-radius:14px; padding:10px 18px; background:#f9f6f2; max-width:260px; box-shadow:0 2px 8px rgba(139,92,42,0.08); transition:box-shadow 0.2s, border 0.2s;">
+          <span style="font-weight:600; color:#8B5C2A;">Learn More</span>
+          <button style="height:32px; width:40px; border-radius:8px; margin-left:8px; background:none; border:none; cursor:pointer; transition:background 0.2s;">
+            <span style="display:inline-block;background:#8B5C2A;padding:8px 14px;border-radius:8px; transition:background 0.2s;">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                  style="width:20px;height:20px;vertical-align:middle;"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="white"
+                  stroke-width="2">
+                  <g transform="translate(0,2)">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18l9-9m0 0v7m0-7h-7" />
+                  </g>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="stats-section" style="max-width:900px; margin:32px auto 0 auto; padding:0 16px;">
+      <div class="stats-cards" style="display:flex; gap:32px; justify-content:center; flex-wrap:wrap;">
+        <div class="stat-card" style="flex:1 1 220px; min-width:220px; max-width:320px; background:#fff; border-radius:22px; box-shadow:0 8px 32px rgba(30,58,138,0.10); padding:36px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; border:3px solid transparent; background-clip:padding-box; position:relative; transition:box-shadow 0.2s, border 0.2s;">
+          <div style="background:linear-gradient(90deg,#8B5C2A,#1e3a8a); border-radius:50%; width:58px; height:58px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; box-shadow:0 2px 8px rgba(139,92,42,0.10);">
+            <i class="fas fa-tasks" style="color:#fff; font-size:2.2rem;"></i>
+          </div>
+          <p class="text-4xl font-bold" style="color:#8B5C2A; margin-bottom:8px;">200+</p>
+          <h2 class="font-semibold mt-2 mb-2" style="font-size:1.25rem;">Projects Completed</h2>
+          <p style="color:#444; font-size:1.05rem;">We have successfully completed over 200 projects, each reflecting our commitment to excellence and attention to detail.</p>
+        </div>
+        <div class="stat-card" style="flex:1 1 220px; min-width:220px; max-width:320px; background:#fff; border-radius:22px; box-shadow:0 8px 32px rgba(30,58,138,0.10); padding:36px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; border:3px solid transparent; background-clip:padding-box; position:relative; transition:box-shadow 0.2s, border 0.2s;">
+          <div style="background:linear-gradient(90deg,#8B5C2A,#1e3a8a); border-radius:50%; width:58px; height:58px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; box-shadow:0 2px 8px rgba(139,92,42,0.10);">
+            <i class="fas fa-award" style="color:#fff; font-size:2.2rem;"></i>
+          </div>
+          <p class="text-4xl font-bold" style="color:#8B5C2A; margin-bottom:8px;">15+</p>
+          <h2 class="font-semibold mt-2 mb-2" style="font-size:1.25rem;">Years of Expertise</h2>
+          <p style="color:#444; font-size:1.05rem;">With over 15 years in the industry, our team brings unparalleled expertise in real estate and design, ensuring your vision becomes a reality.</p>
+        </div>
+        <div class="stat-card" style="flex:1 1 220px; min-width:220px; max-width:320px; background:#fff; border-radius:22px; box-shadow:0 8px 32px rgba(30,58,138,0.10); padding:36px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; border:3px solid transparent; background-clip:padding-box; position:relative; transition:box-shadow 0.2s, border 0.2s;">
+          <div style="background:linear-gradient(90deg,#8B5C2A,#1e3a8a); border-radius:50%; width:58px; height:58px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; box-shadow:0 2px 8px rgba(139,92,42,0.10);">
+            <i class="fas fa-users" style="color:#fff; font-size:2.2rem;"></i>
+          </div>
+          <p class="text-4xl font-bold" style="color:#8B5C2A; margin-bottom:8px;">150+</p>
+          <h2 class="font-semibold mt-2 mb-2" style="font-size:1.25rem;">Happy Clients</h2>
+          <p style="color:#444; font-size:1.05rem;">We take pride in our client relationships, having served over 150 satisfied clients who trust us with their real estate and design needs.</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      .stat-card:hover {
+        box-shadow:0 12px 36px rgba(30,58,138,0.18);
+        border-image:linear-gradient(90deg,#8B5C2A,#1e3a8a) 1;
+        border-width:3px;
+      }
+      @media (max-width: 900px) {
+        .stats-cards {
+          flex-direction:column !important;
+          gap:18px !important;
+        }
+        .stat-card {
+          min-width:0 !important;
+          max-width:100% !important;
+        }
+      }
+    </style>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fixed-navbar {
+        position:fixed !important;
+        top:0; left:0; right:0;
+        z-index:1000;
+      }
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(40px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .navbar-glass {
+        border-radius:22px;
+        box-shadow:0 8px 32px rgba(30,58,138,0.12);
+        backdrop-filter:blur(12px);
+        background:rgba(255,255,255,0.85);
+        border:1.5px solid rgba(139,92,42,0.12);
+      }
+      .nav-list {
+        transition: max-height 0.35s cubic-bezier(.77,0,.175,1), opacity 0.25s;
+      }
+      .nav-link {
+        position:relative;
+        padding-bottom:4px;
+        transition:color 0.18s;
+        cursor:pointer;
+      }
+      .nav-link:after {
+        content:'';
+        position:absolute;
+        left:0; bottom:0;
+        width:100%; height:2.5px;
+        background:linear-gradient(90deg,#8B5C2A,#1e3a8a);
+        border-radius:2px;
+        transform:scaleX(0);
+        transition:transform 0.18s cubic-bezier(.77,0,.175,1);
+      }
+      .nav-link:hover:after {
+        transform:scaleX(1);
+      }
+      .nav-link:hover {
+        color:#1e3a8a !important;
+      }
+      .nav-btn-modern {
+        background:linear-gradient(90deg,#8B5C2A,#1e3a8a);
+        color:#fff;
+        border:none;
+        border-radius:14px;
+        padding:18px 38px;
+        font-size:1.25rem;
+        font-weight:700;
+        text-transform:uppercase;
+        box-shadow:0 4px 16px rgba(30,58,138,0.10);
+        display:flex;
+        align-items:center;
+        gap:12px;
+        transition:transform 0.18s, box-shadow 0.18s;
+        cursor:pointer;
+        position:relative;
+        overflow:hidden;
+      }
+      .nav-btn-modern:hover {
+        transform:scale(1.06);
+        box-shadow:0 8px 32px rgba(30,58,138,0.18);
+        background:linear-gradient(90deg,#1e3a8a,#8B5C2A);
+      }
+      .nav-btn-modern:hover .nav-btn-arrow {
+        transform:translateX(6px) scale(1.15);
+      }
+      @media (max-width: 900px) {
+        .navbar-glass {
+          flex-direction:row;
+          padding:12px 8px !important;
+          margin-left:0 !important;
+          margin-right:0 !important;
+        }
+        .logo-img {
+          height:38px !important;
+          width:auto !important;
+        }
+        .nav-list {
+          position:absolute;
+          top:70px; left:0; right:0;
+          background:rgba(255,255,255,0.98);
+          flex-direction:column;
+          align-items:center;
+          justify-content:flex-start;
+          gap:0;
+          box-shadow:0 8px 32px rgba(30,58,138,0.10);
+          border-radius:0 0 18px 18px;
+          max-height:0;
+          opacity:0;
+          overflow:hidden;
+          z-index:99;
+        }
+        .nav-list.open {
+          max-height:400px;
+          opacity:1;
+        }
+        .nav-link {
+          width:100%;
+          text-align:center;
+          padding:18px 0;
+          font-size:1.1rem;
+          border-bottom:1px solid #eee;
+        }
+        .nav-btn-list {
+          display:none !important;
+        }
+        .nav-list.open .nav-btn-list {
+          display:flex !important;
+        }
+        .nav-btn-modern {
+          font-size:0.95rem !important;
+          padding:10px 12px !important;
+          border-radius:8px !important;
+          margin-left:0 !important;
+          width:90% !important;
+          max-width:260px !important;
+        }
+        .contact-us-mobile {
+          max-width:220px !important;
+          margin-left:auto !important;
+          margin-right:auto !important;
+        }
+        .hamburger {
+          display:block !important;
+        }
+      }
+      .hamburger {
+        width:38px; height:38px;
+        display:none;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:7px;
+        background:none;
+        border:none;
+        cursor:pointer;
+        z-index:100;
+      }
+      .hamburger span {
+        display:block;
+        width:28px;
+        height:4px;
+        background:#8B5C2A;
+        border-radius:2px;
+        transition:all 0.25s cubic-bezier(.77,0,.175,1);
+      }
+      .hamburger.open span:nth-child(1) {
+        transform:rotate(45deg) translate(6px,6px);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity:0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform:rotate(-45deg) translate(6px,-6px);
+      }
+      .contact-us-mobile:hover {
+        box-shadow: 0 8px 24px rgba(30,58,138,0.18) !important;
+        border-color: #8B5C2A !important;
+      }
+      .contact-us-mobile {
+        transition: box-shadow 0.2s, border 0.2s;
+      }
+      .img-hover-box:hover .img-backdrop {
+        background: rgba(139,92,42,0.25) !important;
+        color: #fff !important;
+      }
+      .img-hover-box:hover img {
+        filter: blur(2px) brightness(0.7);
+      }
+      .img-hover-box img {
+        transition: filter 0.3s;
+      }
+      .img-hover-box {
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .img-hover-box:hover {
+        box-shadow: 0 8px 32px rgba(30,58,138,0.18);
+        transform: scale(1.07);
+      }
+    </style>
+</body>
+<script>
+// Hamburger menu toggle
+var hamburger = document.querySelector('.hamburger');
+var navList = document.querySelector('.nav-list');
+var navBtnList = document.querySelector('.nav-btn-list');
+function toggleMenu() {
+  navList.classList.toggle('open');
+  hamburger.classList.toggle('open');
+}
+if (hamburger) {
+  hamburger.addEventListener('click', toggleMenu);
+}
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 900) {
+    navList.classList.remove('open');
+    hamburger.classList.remove('open');
+  }
+});
+// Image hover effect
+document.querySelectorAll('.img-hover-box').forEach(box => {
+  var img = box.querySelector('img');
+  var backdrop = box.querySelector('.img-backdrop');
+  box.addEventListener('mouseenter', function() {
+    img.style.filter = 'blur(2px) brightness(0.7)';
+    backdrop.style.background = 'rgba(20,20,40,0.45)';
+    backdrop.style.opacity = '1';
+    backdrop.style.pointerEvents = 'auto';
+  });
+  box.addEventListener('mouseleave', function() {
+    img.style.filter = '';
+    backdrop.style.background = 'rgba(20,20,40,0.0)';
+    backdrop.style.opacity = '0';
+    backdrop.style.pointerEvents = 'none';
+  });
+});
+</script>
+</body>
+<script>
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+const navBtn = document.querySelector('.nav-btn');
+function toggleMenu() {
+  navList.classList.toggle('open');
+  navBtn.classList.toggle('open');
+}
+if (hamburger) {
+  hamburger.addEventListener('click', toggleMenu);
+}
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 900) {
+    navList.classList.remove('open');
+    navBtn.classList.remove('open');
+  }
+});
+</script>
+</html>
